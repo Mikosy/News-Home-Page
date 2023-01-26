@@ -1,0 +1,148 @@
+
+*{
+    font-family:Inter;
+    list-style-type: none;
+    text-decoration: none;
+    padding:0;
+}
+
+:root{
+    --p-font-size:0.875rem;
+
+    /* Netutral-Colour */
+
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+
+    /* Primary_Colour */
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+}
+.logo img{
+    height:22px;
+}
+.navbar-nav li a{
+    font-size: 0.8rem;    
+    color: var(--grayish-blue); 
+}
+.navbar-nav li a:hover{
+    color:var(--Soft-red);
+    cursor:pointer;
+}
+.section-one img{
+    height:30%;
+    width:100%;
+}
+.section-one h1{
+    font-family: Inter, sanserif;
+    font-weight:800;
+    font-size:2.5rem;
+    color: var(--very-dark-blue);
+}
+.section-one p{
+    font-size: var(--p-font-size);
+}
+.section-one button{
+    background-color: var(--Soft-red);
+    border:none;
+    color: var(--off-white);
+    padding:10px 24px;
+    font-size: 0.7rem;
+    letter-spacing: 0.15rem;
+    text-transform:uppercase ;
+}
+.section-one button:hover{
+    background-color: var(--very-dark-blue);
+    cursor: pointer;
+}
+.computer img{
+    height:120px;
+    width:auto;
+}
+.computer h2{
+    font-weight: 600;
+    color: var(--grayish-blue);
+}
+.computer h5{
+    font-size:0.87rem;
+    font-weight: 700;
+}
+.computer p{
+    font-size: 0.7rem;
+}
+footer {
+    font-size: 11px; 
+    text-align: center; 
+    margin-top:40px;
+
+}
+footer a {
+     color: hsl(228, 45%, 44%); 
+}
+.section-two{
+    background-color: var(--very-dark-blue);
+    padding:20px;
+}
+.section-two .new h1{
+    margin-top:20px;
+    font-size:2rem;
+    font-weight: 600;
+    color: var(--Soft-orange);
+}
+.section-two #title{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-size:0.9rem;
+    font-weight: 600;
+    color: var(--off-white);
+}
+.section-two #title:hover{
+    color:var(--Soft-orange);
+    cursor: pointer;
+}
+.section-two #description{
+    font-size:0.85rem;
+    color: var(--grayish-blue);
+}
+section #row{
+    margin-left:10px;
+}
+section #col{
+    margin-left:10px;
+    margin-right:10px;
+
+}
+.uche{
+    display:none;
+}
+
+
+@media screen and (max-width:990px) {
+    .section-two {
+        margin:9px;
+    }    
+
+    section #row{
+        padding-top:10px;
+        margin-left:5px;
+    }
+    section #col{
+        margin-left:0;
+        margin-right:0;
+    }
+    #navbar-nav{
+        display: none;
+    }
+    .uche{
+        display:block;
+    }
+    .offcanvas-text li a{
+        text-decoration: none;
+        font-size:1.2rem;
+        font-weight: 600;
+        color:var(--very-dark-blue);
+    }
+}
